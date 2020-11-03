@@ -1,0 +1,696 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#screen {
+    width: 100vw;
+    height: 56.25vw;
+    position: relative;
+}
+
+
+
+
+
+
+/*GAME-----------------------------------------------------*/
+
+#game {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+
+
+
+
+
+/*------GAME BACKGROUND*/
+
+#game_background {
+    width: 100%;
+    height: 100%;
+    background-image: url(prod/spilbaggrund.svg);
+    position: absolute;
+}
+
+#game_foreground {
+    width: 100%;
+    height: 82%;
+    background-image: url(prod/spilforgrund.svg);
+    position: absolute;
+    top: 10vw;
+}
+
+
+
+
+
+
+
+/*------GAME ELEMENTS*/
+
+#game_elements {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+/*------*/
+
+#cupcake1_container {
+    position: absolute;
+    top: 41.5vw;
+    left: 110vw;
+    animation-delay: 0s;
+
+}
+
+#cupcake1_sprite {
+    background-image: url(prod/cupcake_1.svg);
+    width: 6vw;
+    height: 7.62vw;
+}
+
+
+#cupcake2_container {
+    position: absolute;
+    top: 41.5vw;
+    left: 110vw;
+    animation-delay: 6s;
+}
+
+#cupcake2_sprite {
+    background-image: url(prod/cupcake_1.svg);
+    width: 6vw;
+    height: 7.62vw;
+}
+
+
+
+
+
+#cupcake3_container {
+    position: absolute;
+    top: 31vw;
+    right: 110vw;
+    animation-delay: 1.5s;
+}
+
+#cupcake3_sprite {
+    background-image: url(prod/cupcake_2.svg);
+    width: 6vw;
+    height: 7.84vw;
+}
+
+
+#cupcake4_container {
+    position: absolute;
+    top: 31vw;
+    right: 110vw;
+    animation-delay: 4.5s;
+}
+
+#cupcake4_sprite {
+    background-image: url(prod/cupcake_2.svg);
+    width: 6vw;
+    height: 7.84vw;
+}
+
+
+
+
+
+#cupcake5_container {
+    position: absolute;
+    top: 19.5vw;
+    left: 110vw;
+    animation-delay: 0s;
+}
+
+#cupcake5_sprite {
+    background-image: url(prod/cupcake_3.svg);
+    width: 6.37vw;
+    height: 9vw;
+}
+
+
+#cupcake6_container {
+    position: absolute;
+    top: 19.5vw;
+    left: 110vw;
+    animation-delay: 2s;
+}
+
+#cupcake6_sprite {
+    background-image: url(prod/cupcake_3.svg);
+    width: 6.37vw;
+    height: 9vw;
+}
+
+
+
+
+
+/*------GRIM KAGE*/
+
+#muffin1_container {
+    position: absolute;
+    top: 43.5vw;
+    left: 110vw;
+    animation-delay: 3s;
+}
+
+#muffin1_sprite {
+    background-image: url(prod/muffin_1.svg);
+    width: 6vw;
+    height: 5.77vw;
+}
+
+
+#muffin2_container {
+    position: absolute;
+    top: 43.5vw;
+    left: 110vw;
+    animation-delay: 9s;
+}
+
+#muffin2_sprite {
+    background-image: url(prod/muffin_1.svg);
+    width: 6vw;
+    height: 5.77vw;
+}
+
+
+
+
+
+#muffin3_container {
+    position: absolute;
+    top: 33vw;
+    right: 110vw;
+    animation-delay: 0s;
+}
+
+#muffin3_sprite {
+    background-image: url(prod/muffin_2.svg);
+    width: 6vw;
+    height: 5.77vw;
+}
+
+
+#muffin4_container {
+    position: absolute;
+    top: 33vw;
+    right: 110vw;
+    animation-delay: 3s;
+}
+
+#muffin4_sprite {
+    background-image: url(prod/muffin_2.svg);
+    width: 6vw;
+    height: 5.77vw;
+}
+
+
+
+
+
+#muffin5_container {
+    position: absolute;
+    top: 22.5vw;
+    left: 110vw;
+    animation-delay: 1s;
+}
+
+#muffin5_sprite {
+    background-image: url(prod/muffin_3.svg);
+    width: 6vw;
+    height: 5.77vw;
+}
+
+
+#muffin6_container {
+    position: absolute;
+    top: 22.5vw;
+    left: 110vw;
+    animation-delay: 3s;
+}
+
+#muffin6_sprite {
+    background-image: url(prod/muffin_3.svg);
+    width: 6vw;
+    height: 5.77vw;
+}
+
+
+
+
+
+.kage1 {
+    animation: kage1;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes kage1 {
+    100% {
+        transform: translateX(-115vw)
+    }
+}
+
+
+.kage2 {
+    animation: kage2;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes kage2 {
+    100% {
+        transform: translateX(115vw)
+    }
+}
+
+.kage3 {
+    animation: kage3;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes kage3 {
+    100% {
+        transform: translateX(-115vw)
+    }
+}
+
+
+
+
+
+/*------UI ELEMENTER*/
+
+#energy_board {
+    position: absolute;
+    background-image: url(prod/followers.svg);
+    width: 12vw;
+    height: 29.17vw;
+    top: 5vw;
+    left: 1vw;
+}
+
+#liv5 {
+    background-image: url(prod/5liv.svg);
+    position: absolute;
+    width: 4.2vw;
+    height: 6.87vw;
+    top: 4.7vw;
+    left: 3.1vw;
+}
+
+#liv4 {
+    background-image: url(prod/4liv.svg);
+    position: absolute;
+    width: 4.2vw;
+    height: 4.35vw;
+    top: 11.56vw;
+    left: 3.1vw;
+}
+
+#liv3 {
+    background-image: url(prod/3liv.svg);
+    position: absolute;
+    width: 4.2vw;
+    height: 4.38vw;
+    top: 15.76vw;
+    left: 3.1vw;
+}
+
+#liv2 {
+    background-image: url(prod/2liv.svg);
+    position: absolute;
+    width: 4.2vw;
+    height: 4.42vw;
+    top: 19.96vw;
+    left: 3.1vw;
+}
+
+#liv1 {
+    background-image: url(prod/1liv.svg);
+    position: absolute;
+    width: 4.2vw;
+    height: 4.42vw;
+    top: 24.16vw;
+    left: 3.1vw;
+}
+
+#time_board {
+    position: absolute;
+    background-image: url(prod/tid.svg);
+    width: 10vw;
+    height: 10vw;
+    top: 1vw;
+    right: 1vw;
+}
+
+.sek_timer {
+    animation: sek;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+@keyframes sek {
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+#score_board {
+    position: absolute;
+    background-image: url(prod/likes.svg);
+    width: 20vw;
+    height: 5.47vw;
+    top: 1vw;
+    right: 12vw;
+}
+
+#point1 {
+    background-image: url(prod/p1.svg);
+    position: absolute;
+    width: 1.26vw;
+    height: 3.5vw;
+    top: 0.4vw;
+    left: 5.1vw;
+}
+
+#point2 {
+    background-image: url(prod/p2.svg);
+    position: absolute;
+    width: 1.3vw;
+    height: 3.5vw;
+    top: 0.4vw;
+    left: 6.2vw;
+}
+
+#point3 {
+    background-image: url(prod/p2.svg);
+    position: absolute;
+    width: 1.3vw;
+    height: 3.5vw;
+    top: 0.4vw;
+    left: 7.4vw;
+}
+
+#point4 {
+    background-image: url(prod/p2.svg);
+    position: absolute;
+    width: 1.3vw;
+    height: 3.5vw;
+    top: 0.4vw;
+    left: 8.6vw;
+}
+
+#point5 {
+    background-image: url(prod/p5.svg);
+    position: absolute;
+    width: 1.3vw;
+    height: 3.5vw;
+    top: 0.4vw;
+    left: 9.8vw;
+}
+
+#point6 {
+    background-image: url(prod/p6.svg);
+    position: absolute;
+    width: 1.3vw;
+    height: 3.5vw;
+    top: 0.4vw;
+    left: 11vw;
+}
+
+#point7 {
+    background-image: url(prod/p7.svg);
+    position: absolute;
+    width: 1.3vw;
+    height: 3.5vw;
+    top: 0.4vw;
+    left: 12.2vw;
+}
+
+#point8 {
+    background-image: url(prod/p8.svg);
+    position: absolute;
+    width: 1.3vw;
+    height: 3.5vw;
+    top: 0.4vw;
+    left: 13.4vw;
+}
+
+#point9 {
+    background-image: url(prod/p9.svg);
+    position: absolute;
+    width: 1.3vw;
+    height: 3.5vw;
+    top: 0.4vw;
+    left: 14.6vw;
+}
+
+#point10 {
+    background-image: url(prod/p10.svg);
+    position: absolute;
+    width: 1.3vw;
+    height: 3.5vw;
+    top: 0.4vw;
+    left: 15.8vw;
+}
+
+#point11 {
+    background-image: url(prod/p2.svg);
+    position: absolute;
+    width: 1.3vw;
+    height: 3.5vw;
+    top: 0.4vw;
+    left: 17vw;
+}
+
+#point12 {
+    background-image: url(prod/p12.svg);
+    position: absolute;
+    width: 1.26vw;
+    height: 3.5vw;
+    top: 0.45vw;
+    left: 18.2vw;
+    background-size: cover;
+}
+
+#stjerner {
+    background-image: url(prod/stjerner.svg);
+    position: absolute;
+    width: 8.9vw;
+    height: 4.8vw;
+    top: -0.2vw;
+    left: 12vw;
+}
+
+#indstillinger {
+    background-image: url(prod/indstillinger_spil.svg);
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    left: 3.75vw;
+    top: 36vw;
+}
+
+#indstil_popup {
+    position: absolute;
+    background-image: url(prod/indstillinger_popup.svg);
+    width: 35vw;
+    height: 45.3vw;
+    left: 32.5vw;
+    top: 5vw;
+}
+
+#knap1 {
+    background-image: url(prod/knap_on.svg);
+    position: absolute;
+    width: 9.6vw;
+    height: 4.5vw;
+    left: 4.5vw;
+    top: 19.4vw;
+    background-size: cover;
+}
+
+#knap2 {
+    background-image: url(prod/knap_on.svg);
+    position: absolute;
+    width: 9.6vw;
+    height: 4.5vw;
+    left: 4.5vw;
+    top: 31.7vw;
+    background-size: cover;
+}
+
+#kryds {
+    background-image: url(prod/kryds.svg);
+    position: absolute;
+    width: 4vw;
+    height: 4vw;
+    top: -1vw;
+    right: -1vw;
+}
+
+/*START----------------------------------------------------*/
+
+#start_skaerm {
+    background-image: url(prod/titelskaerm.svg);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#play {
+    background-image: url(prod/play.svg);
+    width: 27.8vw;
+    height: 26.6vw;
+    position: absolute;
+    top: 24vw;
+    left: 32vw;
+}
+
+#start {
+    width: 36.5vw;
+    height: 36vw;
+    background-size: cover;
+    background-image: url(prod/spilforklaring.svg);
+    position: absolute;
+    top: 10vw;
+    left: 32vw;
+}
+
+#spil_knap {
+    background-color: aqua;
+    opacity: 0;
+    width: 19.4vw;
+    height: 5vw;
+    position: absolute;
+    top: 29.3vw;
+    left: 15.5vw;
+}
+
+/*GAME OVER------------------------------------------------*/
+
+#game_over {
+    width: 70.5vw;
+    height: 44vw;
+    background-size: cover;
+    background-image: url(prod/gameover.svg);
+    position: absolute;
+    top: 6vw;
+    left: 15vw;
+}
+
+#spil_igen {
+    width: 20vw;
+    height: 10vw;
+    position: absolute;
+    top: 33vw;
+    left: 48vw;
+    background-color: aqua;
+    opacity: 0;
+}
+
+/*LEVEL COMPLETE-------------------------------------------*/
+
+#level_complete {
+    width: 70.5vw;
+    height: 44vw;
+    background-size: cover;
+    background-image: url(prod/win.svg);
+    position: absolute;
+    top: 6vw;
+    left: 15vw;
+}
+
+#next_level {
+    width: 20vw;
+    height: 10vw;
+    position: absolute;
+    top: 33vw;
+    left: 48vw;
+    background-color: aqua;
+    opacity: 0;
+}
+
+
+
+/* Effekter ----------------------------------------------*/
+
+.hide {
+    animation: hide_kf;
+    animation-duration: 0s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+
+@keyframes hide_kf {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.display_none {
+    display: none;
+}
+
+.stjerner {
+    animation: stjerner_kf;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+
+@keyframes stjerner_kf {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.pause {
+    animation-play-state: paused;
+}
+
+
+.mute {
+    transform: scaleX(-1);
+    filter: grayscale(0.5);
+}
